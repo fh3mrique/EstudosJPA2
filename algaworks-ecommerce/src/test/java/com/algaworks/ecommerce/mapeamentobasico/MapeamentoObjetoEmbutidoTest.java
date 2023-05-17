@@ -23,7 +23,8 @@ public class MapeamentoObjetoEmbutidoTest extends EntityManagerFabrica {
         entrega.setEstado("PE");
 
         Pedido pedido = new Pedido();
-        pedido.setId(1);
+        //COMENTADO PQ ESTRAMOS USANDO IDENTITY COMO ESTRATEGIA DE GERAÇÃO DE ID
+        //pedido.setId(1);
         pedido.setDataPedido(LocalDateTime.now());
         pedido.setNotaFiscalId(1);
         pedido.setTotal(new BigDecimal(100));

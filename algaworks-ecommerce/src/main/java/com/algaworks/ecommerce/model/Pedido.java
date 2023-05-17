@@ -18,6 +18,7 @@ public class Pedido {
 
     @Id
     @EqualsAndHashCode.Include
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     @Column(name = "data_pedido")
     private LocalDateTime dataPedido;

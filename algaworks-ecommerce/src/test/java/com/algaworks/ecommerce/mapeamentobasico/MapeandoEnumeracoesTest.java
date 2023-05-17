@@ -11,7 +11,8 @@ public class MapeandoEnumeracoesTest extends EntityManagerFabrica {
     @Test
     public void testarEnum(){
         Cliente cliente = new Cliente();
-        cliente.setId(4);
+        //COMENTADO PQ ESTRAMOS USANDO IDENTITY COMO ESTRATEGIA DE GERAÇÃO DE ID
+        //cliente.setId(4);
         cliente.setNome("Hazard");
         cliente.setSexo(SexoCliente.MASCULINO);
 

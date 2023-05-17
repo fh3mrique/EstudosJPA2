@@ -10,8 +10,8 @@ public class PrimeioCrudTest extends EntityManagerFabrica {
     @Test
     public void inserirCliente(){
         Cliente cliente = new Cliente();
-
-        cliente.setId(3);
+        //COMENTADO PQ ESTRAMOS USANDO IDENTITY COMO ESTRATEGIA DE GERAÇÃO DE ID
+       //cliente.setId(3);
         cliente.setNome("Neymar");
 
         entityManager.getTransaction().begin();
@@ -36,7 +36,8 @@ public class PrimeioCrudTest extends EntityManagerFabrica {
     public void atualizarCliente(){
         Cliente cliente = new Cliente();
 
-        cliente.setId(2);
+        //COMENTADO PQ ESTRAMOS USANDO IDENTITY COMO ESTRATEGIA DE GERAÇÃO DE ID
+        //cliente.setId(2);
         cliente.setNome("De bruyne");
 
         entityManager.getTransaction().begin();
